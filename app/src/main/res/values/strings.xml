@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Singapura Layout 1.0</string>
+    <string name="singapore">Singapore</string>
+    <string name="camera">camera</string>
+    <string name="cameraSettings">cameraSettings</string>
+    <string name="settings">settings</string>
+    <string name="sobreSingapura">Singapura[10] (até o FO 1943, grafada Cingapura;[10][nota 1][11] em malaio: Singapura; em inglês: Singapore; em mandarim: 新加坡 Xīnjiāpō; em tâmil: சிங்கப்பூர் Chiṅkappūr), oficialmente República de Singapura, é uma cidade-Estado insular localizada na ponta sul da Península Malaia, no Sudeste Asiático, 137 quilômetros ao norte do equador. Constituído por 63 ilhas, Singapura é separado da Malásia pelo Estreito de Jor, ao norte, e das Ilhas Riau (Indonésia) pelo Estreito de Singapura, ao sul. O país é o que apresenta o maior Índice de Desenvolvimento Humano (IDH) dos países asiáticos (9° melhor do mundo em 2014). O seu território é altamente urbanizado, mas quase metade dele é coberto por vegetação. No entanto, mais terras estão sendo criadas para o desenvolvimento por meio do processo de aterramento marítimo.</string>
+    <string name="discard">DISCARD</string>
+    <string name="upload">UPLOAD</string>
+</resources>

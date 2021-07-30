@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/SingaporeImageViewId"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/singapore"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/estrelaImageViewId"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="125dp"
+        android:backgroundTint="@color/pink"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/background"
+        android:src="@drawable/ic_star"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/SingaporeImageViewId" />
+
+    <TextView
+        android:id="@+id/SinparoreTexViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/singapore"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SingaporeImageViewId" />
+
+    <TextView
+        android:id="@+id/cameraTexViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/camera"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SinparoreTexViewId" />
+
+    <EditText
+        android:id="@+id/cameraEditTextId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:hint="@string/cameraSettings"
+        android:inputType="none"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cameraTexViewId"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/cameraTexViewId" />
+
+    <TextView
+        android:id="@+id/settingsTexViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="25dp"
+       android:text="@string/settings"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cameraTexViewId" />
+
+    <EditText
+        android:id="@+id/settingsEditTextId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+       android:hint="cameraSettings"
+        android:inputType="text"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/settingsTexViewId"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/settingsTexViewId" />
+
+
+    <TextView
+        android:id="@+id/sobreSingapuraTextViewId"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="7dp"
+       android:text="@string/sobreSingapura"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingsTexViewId" />
+
+    <Button
+        android:id="@+id/dicardButtonId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="@color/gray"
+        android:text="@string/discard"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@+id/uoploadButtonId"
+        app:layout_constraintTop_toBottomOf="@+id/sobreSingapuraTextViewId" />
+
+    <Button
+        android:id="@+id/uoploadButtonId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="@color/gray"
+        android:text="@string/upload"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/dicardButtonId"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="59dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
